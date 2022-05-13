@@ -1,10 +1,10 @@
 # Expense-Reimbursement-Project
 
-In order to run the app, make sure to reconfigure:
+In order to run the app, make sure to reconfigure in docker-compose.yml:
+
+db url
 
 App:
-
-application.yaml
 
 Change mailurl
 
@@ -20,7 +20,4 @@ Make sure a microsoft office application password is generated and update it
 
 Change password in the docker-compose api services section.
 
-Docker compose:
-
-Change db url
 
