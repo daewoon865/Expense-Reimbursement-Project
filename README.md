@@ -16,8 +16,8 @@ Change db url
 
 MailApi:
 
-Make sure a microsoft office application password is generated and update it
+Generate a microsoft office application
 
 Change password in the docker-compose api services section.
 
-
+Then run the app with docker-compose up
