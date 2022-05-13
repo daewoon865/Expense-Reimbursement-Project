@@ -1,0 +1,7 @@
+com.ex.demo
+com.ex.demo.controller
+com.ex.demo.dto
+com.ex.demo.entities
+com.ex.demo.helpers
+com.ex.demo.repositories
+com.ex.demo.services

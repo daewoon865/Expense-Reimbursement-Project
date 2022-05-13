@@ -1,0 +1,26 @@
+services:
+  app:
+    build: './demo'
+    container_name: 'reimbursements'
+    ports:
+      - '8000:8000'
+    restart: unless-stopped
+    environment:
+      - MAIL_URL=http://mailapi:8080/sendMail
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_URL=${DB_URL}
+  mailapi:
+    build: './mail'
+    container_name: 'mailapi'
+    environment:
+      - MICROSOFT_TEMP_PASS=${MICROSOFT_TEMP_PASS}
+  db:
+    image: 'mysql:latest'
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+
+      
