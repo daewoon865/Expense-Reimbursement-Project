@@ -1,5 +1,5 @@
 # Expense-Reimbursement-Project
-This project simulates an expense reimbursement system for businesses to manage employees
+This project simulates an expense reimbursement system for businesses to support employees
 
 ## Configuration:
 In order to run the app, make the following changes in the docker-compose.yml:
