@@ -1,23 +1,19 @@
 # Expense-Reimbursement-Project
+This project simulates an expense reimbursement system for businesses to manage employees
 
-In order to run the app, make sure to reconfigure in docker-compose.yml:
+## Configuration:
+In order to run the app, make the following changes in the docker-compose.yml:
 
-db url
+### App Service:
 
-App:
+Change the mailurl
 
-Change mailurl
+Change the db username, password, and url
 
-Change db username
-
-Change db password
-
-Change db url 
-
-MailApi:
+### MailApi Service:
 
 Generate a microsoft office application
 
-Change password in the docker-compose api services section.
+Change the password in the docker-compose api services section.
 
 Then run the app with docker-compose up
